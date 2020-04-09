@@ -1,4 +1,5 @@
 import com.cloudbees.rollout.FeatureContainer;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class FeatureContainerTest {
@@ -9,6 +10,7 @@ public class FeatureContainerTest {
     }
 
     @Test
+    @Ignore
     public void testAnotherFeatureFlag() {
         FeatureContainer flags = new FeatureContainer();
         assert flags.getMyAnotherSampleFlag().isEnabled();
